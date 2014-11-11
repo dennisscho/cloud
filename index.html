@@ -53,7 +53,7 @@ body {
 
 		<div class="starter-template">
 			<h1 id="mainh">Welcome</h1>
-			<p class="lead">This is my first Homepage build with Bootstrap!</p>
+			<p class="lead">This is my first Homepage built with Bootstrap!</p>
 		</div>
 
 	</div>
@@ -72,7 +72,7 @@ body {
 			
 			$("#home").on("click", function(){
 				$("#mainh").text("Welcome");
-				$(".lead").text("This is my first Homepage build with Bootstrap!");
+				$(".lead").text("This is my first Homepage built with Bootstrap!");
 				$("#homeli").addClass("active");
 				$("#aboutli").removeClass("active");
 				$("#contactli").removeClass("active");
@@ -93,6 +93,8 @@ body {
 				$("#homeli").removeClass("active");
 				$("#contactli").addClass("active");
 			});
+
+			$("li > a").css('cursor', 'pointer');
 		});
 	</script>
 </body>
